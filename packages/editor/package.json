@@ -1,0 +1,25 @@
+{
+  "name": "@packages/editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build:types": "dts-bundle-generator -o types/index.d.ts src/index.ts",
+    "build": "ts-node build.ts && pnpm run build:types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "dts-bundle-generator": "^9.3.1",
+    "esbuild": "^0.20.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "konva": "^9.3.6"
+  }
+}
