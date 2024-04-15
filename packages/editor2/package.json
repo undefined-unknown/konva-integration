@@ -1,0 +1,28 @@
+{
+  "name": "@packages/editor2",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build:types": "dts-bundle-generator -o types/index.d.ts src/index.ts",
+    "build": "ts-node build.ts && pnpm run build:types"
+  },
+  "dependencies": {
+    "@blocksuite/block-std": "0.12.0-nightly-202401312339-b178f26",
+    "@blocksuite/blocks": "0.12.0-nightly-202401312339-b178f26",
+    "@blocksuite/presets": "0.12.0-nightly-202401312339-b178f26",
+    "@blocksuite/store": "0.12.0-nightly-202401312339-b178f26",
+    "eventemitter3": "^5.0.1",
+    "konva": "^9.3.1",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "18.7.1",
+    "dts-bundle-generator": "^9.3.1",
+    "esbuild": "^0.20.2",
+    "esbuild-node-externals": "^1.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.2.2"
+  }
+}

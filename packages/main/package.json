@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@packages/editor": "workspace:*",
+    "@packages/editor2": "workspace:*",
     "vue": "^3.4.21"
   },
   "devDependencies": {

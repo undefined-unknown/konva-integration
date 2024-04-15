@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -F @packages/editor build",
+    "build": "pnpm -F @packages/editor* build",
     "serve": "pnpm -F @packages/main dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
 // import HelloWorld from "./components/HelloWorld.vue";
 import { createEditor } from "@packages/editor";
+// import { createEditor as createEditor2 } from "@packages/editor2";
 
-// const rootRef = ref<HTMLElement | null>(null);
-
-onMounted(() => {
+const rootRef = ref<HTMLElement | null>(null);
+onMounted(async () => {
   createEditor("root");
+  // const editor2 = await createEditor2({ root: rootRef.value! });
+  // console.log("editor2", editor2);
+  // await editor2.init(true);
+  // editor2.runDemo();
 });
 </script>
 
@@ -21,6 +25,7 @@ onMounted(() => {
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
   <div id="root"></div>
+  <div ref="rootRef"></div>
 </template>
 
 <style scoped>
