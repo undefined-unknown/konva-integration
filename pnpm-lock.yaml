@@ -8,6 +8,25 @@ importers:
 
   .: {}
 
+  library/components:
+    dependencies:
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.4.5)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.8)(vue@3.4.21)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.8(less@4.2.0)
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.13(typescript@5.4.5)
+
   packages/editor:
     dependencies:
       konva:
@@ -87,6 +106,43 @@ importers:
       '@xpix-editor/presets':
         specifier: workspace:*
         version: link:../../xpix-editor/presets
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.4.5)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.8)(vue@3.4.21)
+      autoprefixer:
+        specifier: ^10.4.19
+        version: 10.4.19(postcss@8.4.38)
+      daisyui:
+        specifier: ^4.11.1
+        version: 4.11.1(postcss@8.4.38)
+      less:
+        specifier: ^4.2.0
+        version: 4.2.0
+      postcss:
+        specifier: ^8.4.38
+        version: 8.4.38
+      tailwindcss:
+        specifier: ^3.4.3
+        version: 3.4.3
+      typescript:
+        specifier: ^5.2.2
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.8(less@4.2.0)
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.13(typescript@5.4.5)
+
+  packages/editor4:
+    dependencies:
+      '@library/components':
+        specifier: workspace:*
+        version: link:../../library/components
       vue:
         specifier: ^3.4.21
         version: 3.4.21(typescript@5.4.5)
