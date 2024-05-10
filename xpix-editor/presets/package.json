@@ -1,0 +1,30 @@
+{
+  "name": "@xpix-editor/presets",
+  "version": "0.0.1",
+  "dependencies": {
+    "@xpix-editor/editor": "workspace:*",
+    "@iconify-json/fluent": "^1.1.51",
+    "@iconify-json/gravity-ui": "^1.1.2",
+    "@iconify-json/lucide": "^1.1.178",
+    "@iconify-json/material-symbols": "^1.1.76",
+    "@iconify-json/material-symbols-light": "^1.1.16",
+    "@iconify-json/mingcute": "^1.1.17",
+    "@iconify-json/ph": "^1.1.11",
+    "@iconify-json/ri": "^1.1.20",
+    "@iconify-json/solar": "^1.1.9",
+    "@iconify-json/tabler": "^1.1.109",
+    "daisyui": "^4.10.2",
+    "lodash-es": "^4.17.21",
+    "tailwindcss": "3.2.7",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "18.7.1",
+    "unplugin-icons": "^0.18.5",
+    "unplugin-vue-components": "^0.26.0"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts"
+}
